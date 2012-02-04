@@ -53,6 +53,9 @@ class RTLTester {
 		}
 
 		$wp_locale->text_direction = $direction;
+		
+		global $wp_styles;
+		$wp_styles->text_direction = $direction;
 
 	}
 
