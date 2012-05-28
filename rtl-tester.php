@@ -7,14 +7,14 @@
  * @package RTL_Tester
  * @author Automattic
  * @author Yoav Farhi
- * @version 1.0.1
+ * @version 1.0.2
  *
  * @wordpress
  * Plugin Name: RTL Tester
  * Plugin URI: http://wordpress.org/extend/plugins/rtl-tester/
  * Description: This plugin adds a button to the admin bar that allow super admins to switch the text direction of the site. It can be used to test WordPress themes and plugins with Right To Left (RTL) text direction.
  * Author: <a href="http://blog.yoavfarhi.com">Yoav Farhi</a>, <a href="http://automattic.com">Automattic</a>
- * Version: 1.0.1
+ * Version: 1.0.2
  */
 
 /**
@@ -49,12 +49,12 @@ class RTLTester {
 	      return;
 
 		// Get opposite direction for button text
-		$direction = is_rtl() ? 'LTR' : 'RTL';
+		$direction = is_rtl() ? 'ltr' : 'rtl';
 
 		$wp_admin_bar->add_menu(
 			array(
 				'id'    => 'RTL',
-		 		'title' => sprintf( __( 'Switch to %s', 'rtl-tester' ), $direction ),
+		 		'title' => sprintf( __( 'Switch to %s', 'rtl-tester' ), strtoupper( $direction ) ),
 		 		'href'  => add_query_arg( array( 'd' => $direction ) )
 			)
 		);
@@ -79,7 +79,6 @@ class RTLTester {
 			if ( false === $direction )
 				$direction = $wp_locale->text_direction;
 		}
-
 		$wp_locale->text_direction = $direction;		
 		$wp_styles->text_direction = $direction;
 	}
