@@ -2,8 +2,8 @@
 Contributors: automattic, yoavf
 Tags: RTL, testing
 Requires at least: 3.1
-Stable tag: 1.0.2
-Tested up to: 3.4
+Stable tag: 1.0.3
+Tested up to: 3.5.1
 
 Test your themes and plugins in RTL mode.
 
@@ -16,6 +16,9 @@ This plugin adds a button to the admin bar that allow super admins to switch the
 Upload, Activate
 
 == Changelog ==
+
+= 1.0.3 =
+Prevent a notice when no direction has been set.
 
 = 1.0.2 =
 Cleanup, bug fix
