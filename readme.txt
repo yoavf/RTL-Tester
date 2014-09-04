@@ -2,7 +2,7 @@
 Contributors: automattic, yoavf
 Tags: RTL, testing
 Requires at least: 3.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 Tested up to: 4.0
 
 Test your themes and plugins in RTL mode.
