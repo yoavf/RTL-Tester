@@ -2,20 +2,23 @@
 Contributors: automattic, yoavf
 Tags: RTL, testing
 Requires at least: 3.1
-Stable tag: 1.0.5
-Tested up to: 4.0
+Stable tag: 1.1
+Tested up to: 4.5
 
 Test your themes and plugins in RTL mode.
 
 == Description ==
 
-This plugin adds a button to the admin bar that allow super admins to switch the text direction of the site. It can be used to test WordPress themes and plugins with Right To Left (RTL) text direction.
+This plugin adds a button to the admin bar that allow admins to switch the text direction of the site. It can be used to test WordPress themes and plugins with Right To Left (RTL) text direction.
 
 == Installation ==
 
 Upload, Activate
 
 == Changelog ==
+
+= 1.1 =
+- Change user check to filterable capability, instead of just calling `is_super_admin()`
 
 = 1.0.5 =
 - Make sure we set the direction the wp_styles object if it already exist.

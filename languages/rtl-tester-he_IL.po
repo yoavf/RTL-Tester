@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: RTL Tetster\n"
+"Project-Id-Version: RTL Tester\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-05 14:28+0200\n"
 "PO-Revision-Date: 2011-05-05 14:33+0200\n"
